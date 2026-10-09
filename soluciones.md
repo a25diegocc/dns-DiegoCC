@@ -185,6 +185,12 @@ Address: 192.168.20.101
 
 ### C) nslookup starwars.lan localhost
 
+Server:		127.0.0.11
+Address:	127.0.0.11#53
+
+Name:	starwars.lan
+Address: 192.168.1.10
+
 
 ### D) nslookup -q=mx starwars.lan localhost
 
@@ -237,3 +243,10 @@ lenda.starwars.lan      text = "Que a forza te acompanhe"
 
 ### H) nslookup 192.168.20.11 localhost
  
+Server: localhost
+Address: 127.0.0.1#53
+
+lenda.starwars.lan text = "Que a forza te acompanhe"
+
+root@darthvader:/var/cache/bind# nslookup 192.168.20.11 localhost
+11.20.168.192.in-addr.arpa name = darthsidious.starwars.lan.

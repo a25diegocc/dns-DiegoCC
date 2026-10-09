@@ -83,7 +83,7 @@ services:
       - ./cliente/actualiza.txt:/etc/bind/actualiza.txt
     dns: 
     - 192.168.20.10
-    - 192.168.20.12
+    - 192.168.20.11
 
 networks:
   rededns:
