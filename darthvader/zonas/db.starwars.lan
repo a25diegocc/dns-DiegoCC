@@ -10,9 +10,7 @@ $TTL    86400
 @       IN      NS      darthvader.starwars.lan.
 @       IN      NS      darthsidious.starwars.lan.
 
-@       IN      MX      10 c3p0.starwars.lan.
-
-@       IN      A       192.168.1.10
+; Rexistros A dos servidores de nomes
 darthvader     IN      A       192.168.20.10
 skywalker      IN      A       192.168.20.12
 skywalker      IN      A       192.168.20.111
@@ -24,3 +22,4 @@ c3p0           IN      A       192.168.20.26
 palpatine      IN      CNAME   darthsidious.starwars.lan.
 @              IN   MX  10   c3p0.starwars.lan.
 lenda          IN   TXT     "Que a forza te acompañe"
+chewbacca     IN       A        192.168.20.28         
