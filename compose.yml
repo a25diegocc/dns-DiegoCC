@@ -1,27 +1,27 @@
 services:
 
-  nsraiz:
-    build: dnsserver
-    hostname: raiz    
-    networks:
-      rededns:
-        ipv4_address: 192.168.20.8
-    volumes:
-      - ./raiz/named.conf.options:/etc/bind/named.conf.options
-      - ./raiz/named.conf.local:/etc/bind/named.conf.local
-      - ./raiz/db.raiz:/etc/bind/db.raiz
+ # nsraiz:
+ #   build: dnsserver
+#    hostname: raiz    
+#    networks:
+#      rededns:
+#        ipv4_address: 192.168.20.8
+#    volumes:
+#      - ./raiz/named.conf.options:/etc/bind/named.conf.options
+#      - ./raiz/named.conf.local:/etc/bind/named.conf.local
+#      - ./raiz/db.raiz:/etc/bind/db.raiz
 
-  nslan:
-    build: dnsserver
-    hostname: nslan   
-    volumes:
-      - ./lan/named.conf.options:/etc/bind/named.conf.options
-      - ./lan/named.conf.local:/etc/bind/named.conf.local
-      - ./lan/db.lan:/etc/bind/db.lan
-      - ./dnsserver/root.hints:/usr/share/dns/root.hints
-    networks:
-      rededns:
-        ipv4_address: 192.168.20.9
+#  nslan:
+#    build: dnsserver
+#    hostname: nslan   
+#    volumes:
+#      - ./lan/named.conf.options:/etc/bind/named.conf.options
+#      - ./lan/named.conf.local:/etc/bind/named.conf.local
+#      - ./lan/db.lan:/etc/bind/db.lan
+#      - ./dnsserver/root.hints:/usr/share/dns/root.hints
+#    networks:
+#      rededns:
+#        ipv4_address: 192.168.20.9
   darthvader:
     build: dnsserver
     hostname: darthvader

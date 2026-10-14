@@ -3,4 +3,3 @@
 rsyslogd
 
 named -u bind "$@"
-
